@@ -22,7 +22,12 @@ const handleUserInput = (key) => {
     connection.write('Move: down');
   } else if (key === 'd') {
     connection.write('Move: right');
+  } else if (key === 'e') {
+    connection.write('Say: Excuse Me.');
+  } else if (key === 'c') {
+    connection.write('Say: Snake coming through');
   }
+
 };
 
 module.exports = { setupInput };
